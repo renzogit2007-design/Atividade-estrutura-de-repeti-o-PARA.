@@ -1,0 +1,17 @@
+programa {
+    funcao inicio() {
+        inteiro i, valor, maior, menor
+
+        leia(valor)
+        maior = valor
+        menor = valor
+
+        para (i = 2; i <= 50; i++) {
+            leia(valor)
+            se (valor > maior) { maior = valor }
+            se (valor < menor) { menor = valor }
+        }
+
+        escreva(maior, "\n", menor)
+    }
+}
