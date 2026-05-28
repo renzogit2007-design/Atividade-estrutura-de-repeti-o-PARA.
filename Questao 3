@@ -1,0 +1,27 @@
+programa {
+    funcao inicio() {
+        inteiro i, numFilhos, totalFilhos = 0, contAte100 = 0
+        real salario, totalSalario = 0.0, maiorSalario = 0.0
+
+        para (i = 1; i <= 5; i++) {
+            leia(salario)
+            leia(numFilhos)
+
+            totalSalario = totalSalario + salario
+            totalFilhos = totalFilhos + numFilhos
+
+            se (salario > maiorSalario) {
+                maiorSalario = salario
+            }
+
+            se (salario <= 100) {
+                contAte100++
+            }
+        }
+
+        escreva(totalSalario / 5, "\n")
+        escreva(totalFilhos / 5.0, "\n")
+        escreva(maiorSalario, "\n")
+        escreva((contAte100 / 5.0) * 100, "%")
+    }
+}
