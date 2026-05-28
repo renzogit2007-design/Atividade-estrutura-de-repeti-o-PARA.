@@ -1,0 +1,19 @@
+programa {
+    funcao inicio() {
+        inteiro voto = -1, c1 = 0, c2 = 0, c3 = 0, c4 = 0, nulo = 0, branco = 0
+
+        enquanto (voto != 0) {
+            leia(voto)
+            escolha (voto) {
+                caso 1: c1++ pare
+                caso 2: c2++ pare
+                caso 3: c3++ pare
+                caso 4: c4++ pare
+                caso 5: nulo++ pare
+                caso 6: branco++ pare
+            }
+        }
+
+        escreva(c1, "\n", c2, "\n", c3, "\n", c4, "\n", nulo, "\n", branco)
+    }
+}
